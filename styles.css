@@ -20,7 +20,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: url("light-mode-bg.jpg") center/cover no-repeat fixed;
+  background: url("bg-img.jpg") center/cover fixed;
   z-index: -1;
   transition: filter 0.5s ease;
 }
@@ -36,6 +36,13 @@ body.dark-mode h2,
 body.dark-mode h3,
 body.dark-mode p {
   color: #ffffff;
+}
+
+body.dark-mode summary,
+body.dark-mode nav a,
+body.dark-mode li a,
+body.dark-mode .project-card a{
+ color: #afe4ff;
 }
 
 h1, h2, h3 {
@@ -60,10 +67,14 @@ nav a {
   padding: 0.5rem 1rem;
   border-radius: 8px;
   transition: background-color 0.3s;
+
 }
 
 nav a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.295);
+}
+body.dark-mode nav a:hover{
+  background-color: #ffffff0d;
 }
 
 #darkModeToggle {
@@ -73,7 +84,7 @@ nav a:hover {
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(145, 145, 145, 0.2);
   color: #4a4a4a;
   cursor: pointer;
   z-index: 999;
@@ -82,7 +93,16 @@ nav a:hover {
 }
 
 #darkModeToggle:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(70, 70, 70, 0.217);
+}
+
+body.dark-mode #darkModeToggle{
+  background-color: #4a4a4a63;
+  color: #fff;
+}
+
+body.dark-mode #darkModeToggle:hover{
+  background-color: #2d2d2d33;
 }
 
 .project-card {
@@ -109,7 +129,7 @@ nav a:hover {
   color: var(--highlight);
   text-decoration: none;
   font-weight: bold;
-  color: #ff6830;
+  color: #5f6aff;
 }
 
 .project-card a:hover {
@@ -152,7 +172,12 @@ details {
 
 .glass-card:hover,
 details:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.349);
+}
+
+body.dark-mode .glass-card:hover,
+body.dark-mode details:hover{
+ background:rgba(188, 188, 188, 0.192);
 }
 
 summary {
@@ -160,7 +185,7 @@ summary {
   cursor: pointer;
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
-  color: rgb(255, 89, 0);
+  color: rgb(69, 94, 253);
 }
 
 details p {
@@ -178,7 +203,7 @@ ul {
 }
 
 li a {
-  color: #ff6830;
+  color: #5f6aff;
   text-decoration: none;
 }
 
@@ -201,7 +226,7 @@ li a:hover {
 }
 
 #back2top:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.639);
 }
 
 /* === Footer === */
