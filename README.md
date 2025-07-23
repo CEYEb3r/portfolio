@@ -6,6 +6,8 @@ A full-stack developer & digital artist portfolio blending code, design, and int
 
 [View it on GitHub Pages](https://CEYEb3r.github.io/portfolio/)
 
+Note: If you're using Brave browser the background might not display as intended, please open with chrome for the best expirience.
+
 ## Built With
 
 - HTML  
